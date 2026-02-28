@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJEM INVESTMENTS (PVT) LTD</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>RAJEM INVESTMENTS (PVT) LTD</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h2>Welcome to RAJEM INVESTMENTS (PVT) LTD</h2>
+                <p>RAJEM INVESTMENTS (PVT) LTD is a diversified company involved in human resources consulting, training, and retail business. We invest in human capital development and retail business. Founded in 2024, we are highly committed to providing exceptional customer service and convenience.We amicably and collaboratively work in partnership with suppliers and clients in order to provide products and services that offer high value to customers.We are guided daily by our business philosophy,"serving from the heart!" "The best and most beautiful things in the world cannot be seen or even touched- they must be felt" Hellen Keller</p>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Founded in 2024, RAJEM INVESTMENTS (PVT) LTD is dedicated to investing in people and retail. Our mission is to empower individuals and businesses through expert consulting, impactful training, and accessible retail solutions. We pride ourselves on our commitment to excellence and customer satisfaction.</p>
+            </div>
+        </section>
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <ul>
+                    <li><strong>Human Resources Consulting:</strong> Professional HR solutions for businesses of all sizes.</li>
+                    <li><strong>Training:</strong> Comprehensive training programs to develop human capital.</li>
+                    <li><strong>Retail Business:</strong> Providing quality products and exceptional convenience to our customers.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <div id="formMessage"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 RAJEM INVESTMENTS (PVT) LTD. All rights reserved</p>
+            </div>
+    </footer>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            formMessage.textContent = 'Thank you for contacting us! We will get back to you soon.';
+            form.reset();
+        });
+    }
+});
+    <script src="assets/script.js"></script>
+</body>
+</html>
